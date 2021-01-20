@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const basicAuth = require('express-basic-auth');
 
-// app.use('/', indexRouter);
+app.use('/', indexRouter);
 
 app.use(
     '/users',
